@@ -1,0 +1,11 @@
+ import os.path
+import time
+
+
+while True:
+    file_exist101 = os.path.exists("alarmOut101.txt")
+    if file_exist101:
+        print ("it was an alarm on 101")
+        print('\a')
+        # here comes the code to activate the siren
+        time.sleep(10)
